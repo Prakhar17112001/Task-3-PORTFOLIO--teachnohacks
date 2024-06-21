@@ -1,0 +1,146 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin-right: 40px;
+    margin-left: 40px;
+}
+.button{
+    width: 150px;
+    height: 150px;
+    color: white;
+    border: rgb(255, 255, 255) 2px solid;
+    border-radius: 5px;
+    padding: 10px;
+    outline: none;
+    text-decoration: none;
+}
+header {
+    text-align: center;
+    background: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+/* .profile{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+} */
+header .profile img {
+    width: 150px;
+    
+}
+
+header h1, header p {
+    margin: 10px 0;
+}
+
+section {
+    padding: 20px;
+    margin: 20px 0;
+}
+
+#about, #contact {
+    background: #f4f4f4;
+    padding: 40px 20px;
+}
+
+#skills, #projects {
+    padding: 40px 20px;
+}
+
+.skills-container, .projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.skill, .project-card {
+    background: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    text-align: center;
+    width: calc(25% - 40px);
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.3s ease-out;
+}
+
+.skill img{
+    max-width: 45%;
+}
+.project-card img {
+    margin-top: 10px;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.project-card img {
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.github-btn {
+    margin-bottom: 10px;
+    display: inline-block;
+    padding: 10px 15px;
+
+    background: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.github-btn:hover {
+    background: #555;
+}
+
+
+#contact form {
+    display: flex;
+    flex-direction: column;
+}
+
+#contact label {
+    margin-top: 10px;
+}
+
+#contact input, #contact textarea {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+#contact button {
+    padding: 10px;
+    margin-top: 10px;
+    background: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+@media (max-width: 768px) {
+    .skill, .project-card {
+        width: calc(50% - 40px);
+    }
+}
+
+@media (max-width: 480px) {
+    .skill, .project-card {
+        width: calc(100% - 40px);
+    }
+}
